@@ -1,0 +1,12 @@
+<h2>Update Employee</h2>
+    <form (ngSubmit) = "onSubmit()">
+        <label>First Name</label>
+        <input type ="text" id = "firstName" [(ngModel)] = "employee.firstName" name="firstName">
+        <label>Last Name</label>
+        <input type ="text" id = "lastName" [(ngModel)] = "employee.lastName" name="lastName">
+        <label>EMail</label>
+        <input type ="text" id = "email" [(ngModel)] = "employee.email" name="email">
+
+
+        <button type="submit">Submit</button>
+    </form>
