@@ -25,6 +25,10 @@ export class EmployeeListComponent implements OnInit {
     })
   }
 
+viewEmployee(id: number){
+  this.router.navigate(['employee-details', id]);
+}
+
   updateEmployees(id: number){
     this.router.navigate(['update-employee', id]);
   }
